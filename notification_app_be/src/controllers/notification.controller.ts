@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Log } from "../../../../logging_middleware/index";
+import { Log } from "../../../logging_middleware/index";
 import * as Service from "../services/notification.service";
 
 export async function getNotifications(req: Request, res: Response) {

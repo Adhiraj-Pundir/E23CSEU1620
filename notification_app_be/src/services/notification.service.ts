@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as dotenv from "dotenv";
 dotenv.config({ path: "../../.env" });
-import { Log } from "../../../../logging_middleware/index";
+import { Log } from "../../../logging_middleware/index";
 
 const BASE_URL = process.env.BASE_URL || "http://4.224.186.213/evaluation-service";
 const TYPE_WEIGHT: Record<string, number> = { Placement: 3, Result: 2, Event: 1 };
